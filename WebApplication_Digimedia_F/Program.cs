@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebApplication_Digimedia_F.Context;
+using WebApplication_Digimedia_F.Models;
 
 namespace WebApplication_Digimedia_F
 {
@@ -15,6 +17,14 @@ namespace WebApplication_Digimedia_F
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
+
+            builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+            {
+
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+      
+
+
 
 
             var app = builder.Build();
