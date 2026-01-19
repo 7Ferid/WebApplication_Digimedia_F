@@ -32,7 +32,7 @@ namespace WebApplication_Digimedia_F.Migrations
                 oldType: "nvarchar(max)");
 
             migrationBuilder.AlterColumn<string>(
-                name: "ImagePath",
+                name: "Image",
                 table: "Projects",
                 type: "nvarchar(1024)",
                 maxLength: 1024,
@@ -54,7 +54,7 @@ namespace WebApplication_Digimedia_F.Migrations
                 oldMaxLength: 256);
 
             migrationBuilder.AlterColumn<string>(
-                name: "ImagePath",
+                name: "Image",
                 table: "Projects",
                 type: "nvarchar(max)",
                 nullable: false,
