@@ -10,4 +10,5 @@ namespace WebApplication_Digimedia_F.Areas.Admin.Controllers
             return View();
         }
     }
+
 }
